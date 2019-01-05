@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-Type" content="text/html" charset="utf-8">
+    <meta content=’width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0′ name=’viewport’ />
+	<title>Tic Tac Toe</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body id="body">
+    <div class="container" id="container">
+        <canvas id="mycanvas" width="300" height="300"></canvas>
+        <canvas id="newcanvas" width="300" height="300"></canvas>
+        <button onclick="circle(50,50,1);check()" id="circle1"> </button>
+        <center><h1 id="head"></h1></center>
+        <div class="player1">
+            <center><h1 id="player1">Player1<br></h1><h1>{o}</h1> </center>
+        
+        </div>
+        <button onclick="circle(150,50,2);check()" id="circle2"></button>
+        <button onclick="circle(250,50,3);check()" id="circle3"></button><br>
+        <button onclick="circle(50,150,4);check()" id="circle4"></button>
+        <button onclick="circle(150,150,5);check()" id="circle5"></button>
+        <button onclick="circle(250,150,6);check()" id="circle6"></button><br>
+        <button onclick="circle(50,250,7);check()" id="circle7"></button>
+        <button onclick="circle(150,250,8);check()" id="circle8"></button>
+        <button onclick="circle(250,250,9);check()" id="circle9"></button>
+        <div class="Computer">
+            <center><h1>Computer<br></h1><h1>{x}</h1> </center>
+        </div>
+        </div>
+        <div class="scorecard" Id="scorecard">
+            <h1>Enter Your Name: &nbsp <input type="text" name="name" id="name"></h1>
+            <h1 style="color: seagreen;">We Will Assign ' o ' Symbol To You </h1><br><br>
+            <input type="button" name="button" value="start" id="starting" onclick="starting()" class="button">
+        </div>
+</body>
+</html>
